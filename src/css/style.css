@@ -18,6 +18,7 @@ body{
 
 .cabecalho .logo{
     width: 85px;
+    border-radius: 50px;
 }
 
 .cabecalho .menu{
@@ -52,12 +53,18 @@ body{
     max-width: 500px
 }
 
+.container .informacoes img{
+    max-width: 300px;
+}
+
 .container .descricao{
     color: #a8adb7;
     width: 85%;
     font-size: 18px;
     margin: 30px 0;
 }
+
+
 
 .container .botao-trailer{
     background-color: #ff0021;
@@ -96,7 +103,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(255,0,0,0.5) 0%, rgba(0,0,0,0.5) 50%, rgba(255,0,0,0.5) 100%);
 }
 
 .modal{
@@ -106,6 +113,8 @@ body{
     top: 0;
     left: 0;
     background-color: rgba(52, 52, 50, 0.749);
+    display: none;
+    
     
 }
 
@@ -137,6 +146,5 @@ body{
 }
 
 .modal.aberto {
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
